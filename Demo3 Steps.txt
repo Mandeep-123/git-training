@@ -1,0 +1,30 @@
+Demo 3:
+1) Modify file lesson1.txt
+2) git status
+3) git checkout lesson1.txt (changes will be lost)
+4) make some changes to multiple files in the dir
+5) git checkout (will list modified tracked files)
+6) git checkout . (all modified files are replaced from the local repo)
+
+7) make some changes to lesson1.txt
+8) add lesson1.txt to stage
+9) make some more changes to lesson1.txt
+10)check status
+11) checkout lesson1.txt to see the stage file overwritting working dir file.
+
+
+12) git reset <mode> <commitid>
+	mode = --mixed   Discard commits in local repo and changes in the staging area
+
+	--soft   Discard commits in local repo alone
+
+	--hard Discard commits in local repo, changes in staging area and workding dir as well.
+
+
+13) create a file named .gitignore and add the list of files not to be considered by git for tracking
+
+*.exe
+README
+.*
+logs/
+
